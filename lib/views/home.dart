@@ -61,5 +61,5 @@ class HomeItems extends StatelessWidget {
 }
 
 final items = [
-  {"title": "2021년 12월 7일 포스트", "tap": const Dec7()}
+  {"title": "2021년 12월 7일 포스트", "tap": const Dec12()}
 ];
