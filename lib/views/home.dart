@@ -1,5 +1,7 @@
 import 'package:blog/components/cupertino_tap.dart';
 import 'package:blog/components/frame_widget.dart';
+import 'package:blog/util/custom_route.dart';
+import 'package:blog/views/post/dec20.dart';
 import 'package:blog/views/post/dec7.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +40,7 @@ class HomeItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoTap(
       onTap: () {
-        Navigator.of(context).push(MaterialPageRoute(builder: to));
+        Navigator.of(context).push(CustomRoute(builder: to));
       },
       child: Container(
         decoration: BoxDecoration(color: Colors.white, boxShadow: [
@@ -61,5 +63,6 @@ class HomeItems extends StatelessWidget {
 }
 
 final items = [
-  {"title": "2021년 12월 7일 포스트", "tap": const Dec12()}
+  {"title": "2021년 12월 7일 포스트", "tap": const Dec12()},
+  {"title": "2021년 12월 20일 포스트", "tap": const Dec20()}
 ];
