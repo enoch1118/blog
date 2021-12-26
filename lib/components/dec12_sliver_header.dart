@@ -19,21 +19,24 @@ class Dec12SliverHeader extends SliverPersistentHeaderDelegate {
                     title,
                     style: Theme.of(context).textTheme.headline5,
                   ))),
-          AnimatedContainer(
-            duration: const Duration(milliseconds: 500),
-            color: Colors.green[50],
-            height: shrinkOffset > 0 ? maxExtend : 0,
-            child: Padding(
-              padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).padding.top,
-                  left: 20,
-                  right: 20,
-                  bottom: 10),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  title,
-                  style: Theme.of(context).textTheme.subtitle1,
+          AnimatedOpacity(
+            duration: const Duration(milliseconds: 300),
+            opacity: shrinkOffset > 0 ? 1 : 0,
+            child: Container(
+              color: Colors.green[50],
+              height: maxExtend,
+              child: Padding(
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).padding.top,
+                    left: 20,
+                    right: 20,
+                    bottom: 10),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    title,
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
                 ),
               ),
             ),

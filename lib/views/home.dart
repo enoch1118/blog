@@ -2,6 +2,7 @@ import 'package:blog/components/cupertino_tap.dart';
 import 'package:blog/components/frame_widget.dart';
 import 'package:blog/util/custom_route.dart';
 import 'package:blog/views/post/dec20.dart';
+import 'package:blog/views/post/dec26.dart';
 import 'package:blog/views/post/dec7.dart';
 import 'package:flutter/material.dart';
 
@@ -64,5 +65,6 @@ class HomeItems extends StatelessWidget {
 
 final items = [
   {"title": "2021년 12월 7일 포스트", "tap": const Dec12()},
-  {"title": "2021년 12월 20일 포스트", "tap": const Dec20()}
+  {"title": "2021년 12월 20일 포스트", "tap": const Dec20()},
+  {"title": "2021년 12월 26일 포스트", "tap": const Dec26()}
 ];
